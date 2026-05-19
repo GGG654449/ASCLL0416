@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑", sans-serif;
+}
+body {
+    background: #eeeeee;
+    padding: 30px 0;
+}
+/* 整体大容器 */
+.resume-box {
+    width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 35px;
+}
+/* 核心：每一个板块独立区域 带边框 分割明显 */
+.item-box {
+    border: 2px solid #6699cc;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    background: #fafbfd;
+}
+/* 板块标题 */
+.title {
+    font-size: 18px;
+    color: #1a4971;
+    border-bottom: 1px solid #99b8d8;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+/* 基本信息左右布局 */
+.info-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.info-left {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.info-line {
+    width: 50%;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.info-line span {
+    font-weight: bold;
+    color: #333;
+}
+.info-right {
+    width: 25%;
+    text-align: center;
+}
+.head-img {
+    width: 140px;
+    height: 180px;
+    border: 1px solid #999;
+}
+/* 列表条目 分点清晰 */
+.content-list {
+    list-style: none;
+}
+.content-list li {
+    font-size: 15px;
+    line-height: 1.8;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    position: relative;
+}
+.content-list li::before {
+    content: "●";
+    color: #34679b;
+    position: absolute;
+    left: 0;
+}
+/* 视频样式 */
+.video-wrap {
+    margin-top: 15px;
+    text-align: center;
+}
+.video-wrap video {
+    width: 600px;
+    border: 1px solid #ccc;
+}
